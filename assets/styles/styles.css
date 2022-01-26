@@ -64,8 +64,11 @@ header{
 }
 
 .profile-img{
-    height: 75px;
+    height: 70px;
     width: auto;
+    border-radius: 10px;
+    margin: 3px 0 3px 3px;
+    border: solid var(--accent) 1px;
 }
 
 
