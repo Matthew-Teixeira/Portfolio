@@ -1,0 +1,197 @@
+:root {
+    --main-bg-color: rgb(31, 40, 51);
+    --secondary-bg-color: rgb(11, 12, 16);
+    --tertiary-bg-color: rgb(60, 70, 82);
+    --primary-text-color: rgb(197, 198, 199);
+    --secondary-text-color: rgb(102, 252, 241);
+    --accent: rgb(69, 162, 158);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+/*Start of header and nav*/
+header{
+    position: sticky;
+    top: 0;
+    background: var(--secondary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*Make space between once it gets larger*/
+    align-items: center;
+    flex: 100%;
+    z-index: 9999;
+}
+
+.navbar h1{
+    margin: 0 auto;
+    font-size: 2.125rem;
+    color: var(--secondary-text-color);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 1 100%;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    margin: .5rem;
+}
+
+
+
+.navbar ul li a:hover{
+    color: var(--secondary-text-color);
+}
+
+.profile-img{
+    height: 75px;
+    width: auto;
+}
+
+
+/*Start of hero*/
+
+main{
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100vw;
+}
+
+.hero-text{
+    text-align: center;
+    margin-bottom: 150px;
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+}
+
+.hero-text h2{
+    color: var(--secondary-text-color);
+    font-size: 2.75rem;
+    border-bottom: solid var(--accent) 3px;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+/*Start of main content*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    padding: 1rem;
+    column-gap: 1rem;
+}
+
+.main-content{
+    flex: 2;
+    background: var(--tertiary-bg-color);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.main-content h2, .side-data h2{
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-top: 1rem;
+}
+
+.side-data{
+    flex: 1;
+    text-align: center;
+    background: var(--tertiary-bg-color);
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    height: fit-content;
+}
+
+.main-content p, .side-data p:last-child{
+    margin-bottom: 1rem;
+}
+
+/*Footer*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    color: var(--primary-text-color);
+}
+
+.connect{
+    display: flex;
+    margin-top: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#github{
+    height: 37px;
+    margin-right: .125rem;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 575px) {
+
+    .navbar{
+        justify-content: flex-end; /*MAke space between once it gets larger*/
+    }
+
+    .navbar ul{
+        justify-content: flex-end;
+        flex: 1;
+        margin-right: 1rem;
+    }
+
+    .navbar h1{
+        padding-left: 1rem;
+    }
+
+    .hero-text{
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    .side-data{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
