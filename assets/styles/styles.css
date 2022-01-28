@@ -7,6 +7,15 @@
     --accent: rgb(69, 162, 158);
 }
 
+/*Utility Classes*/
+.mt{
+    margin-top: 5rem;
+}
+
+.h3-fs{
+    font-size: 1.75rem;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -75,16 +84,12 @@ header{
 
 /*Start of hero*/
 
-main{
-    
-}
-
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 95vh;
-    width: 100vw;
+    width: auto;
 }
 
 .hero-text{
@@ -142,11 +147,7 @@ main{
 
 /*Start of services*/
 
-.service-section{
-    
-}
-
-.service-section h2{
+.section h2{
     font-size: 2.25rem;
     width: 250px;
     margin: 0 auto;
@@ -157,15 +158,19 @@ main{
     padding-bottom: .5rem;
 }
 
+.section p{
+    font-size: 18px;
+}
+
 .grid-container{
     display: grid;
     grid-template-rows: auto;
     row-gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.service{
-    padding: 1.5rem;
+.service-sub-contain{
+    padding: 2rem;
     text-align: center;
     color: var(--primary-text-color);
     border: solid var(--accent) 1px;
@@ -173,9 +178,44 @@ main{
     background-color: var(--tertiary-bg-color);
 }
 
-.service h3{
+.service-sub-contain h3{
     color: var(--secondary-text-color);
     margin: .5rem;
+}
+
+/* Start of projects*/
+.proj-grid-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+
+.proj-grid-container img:hover{
+    box-shadow: 5px 5px 5px var(--secondary-text-color);
+}
+
+.proj-sub-contain{
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.proj-sub-contain h3{
+    color: var(--secondary-text-color);
+    margin: .5rem;
+}
+
+.proj-sub-contain img{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    border: solid var(--accent) 1px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--accent);
 }
 
 /*Footer*/
@@ -208,7 +248,7 @@ footer{
 @media screen and (min-width: 575px) {
 
     .navbar{
-        justify-content: flex-end; /*MAke space between once it gets larger*/
+        justify-content: flex-end; /*Make space between once it gets larger*/
     }
 
     .navbar ul{
@@ -239,5 +279,15 @@ footer{
     .grid-container{
         grid-template-columns: 32.75% 32.75% 32.75%;
         column-gap: .5rem;
+    }
+
+    .proj-grid-container{
+        grid-template-columns: 32.75% 32.75% 32.75%;
+        column-gap: .5rem;
+    }
+
+    .proj-sub-contain img{
+        width: 100%;
+        height: auto;
     }
 }
