@@ -7,6 +7,15 @@
     --accent: rgb(69, 162, 158);
 }
 
+/*Utility Classes*/
+.mt{
+    margin-top: 5rem;
+}
+
+.h3-fs{
+    font-size: 1.75rem;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -75,16 +84,12 @@ header{
 
 /*Start of hero*/
 
-main{
-    
-}
-
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 95vh;
-    width: 100vw;
+    width: auto;
 }
 
 .hero-text{
@@ -142,7 +147,7 @@ main{
 
 /*Start of services*/
 
-.service-section h2{
+.section h2{
     font-size: 2.25rem;
     width: 250px;
     margin: 0 auto;
@@ -153,15 +158,19 @@ main{
     padding-bottom: .5rem;
 }
 
+.section p{
+    font-size: 18px;
+}
+
 .grid-container{
     display: grid;
     grid-template-rows: auto;
     row-gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .service-sub-contain{
-    padding: 1.5rem;
+    padding: 2rem;
     text-align: center;
     color: var(--primary-text-color);
     border: solid var(--accent) 1px;
@@ -179,10 +188,15 @@ main{
     display: grid;
     grid-template-rows: auto;
     grid-auto-flow: row;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+
+.proj-grid-container img:hover{
+    box-shadow: 5px 5px 5px var(--secondary-text-color);
 }
 
 .proj-sub-contain{
-    padding: 1.5rem;
     text-align: center;
     color: var(--primary-text-color);
 }
@@ -196,6 +210,12 @@ main{
     border-radius: 5px;
     width: 100%;
     height: auto;
+    border: solid var(--accent) 1px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--accent);
 }
 
 /*Footer*/
@@ -263,10 +283,11 @@ footer{
 
     .proj-grid-container{
         grid-template-columns: 32.75% 32.75% 32.75%;
+        column-gap: .5rem;
     }
 
     .proj-sub-contain img{
         width: 100%;
-    height: auto;
+        height: auto;
     }
 }
