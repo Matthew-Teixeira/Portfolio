@@ -229,6 +229,15 @@ header{
     color: var(--accent);
 }
 
+.projects a:hover {
+    color: var(--secondary-text-color);
+    text-shadow: 2px 2px 5px var(--primary-text-color);
+}
+
+.proj-sub-contain p:not(:last-child) {
+    margin-top: 0.5rem;
+}
+
 /*Footer*/
 
 footer{
