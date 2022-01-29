@@ -67,10 +67,9 @@ header{
     margin: .5rem;
 }
 
-
-
 .navbar ul li a:hover{
     color: var(--secondary-text-color);
+    text-shadow: 2px 2px 5px var(--primary-text-color);
 }
 
 .profile-img{
@@ -144,6 +143,18 @@ header{
 .main-content p, .side-data p:last-child{
     margin-bottom: 1rem;
 }
+
+/*About Section*/
+.about{
+    padding: 2rem;
+    color: var(--primary-text-color);
+    border: solid var(--accent) 1px;
+    border-radius: 5px;
+    background-color: var(--tertiary-bg-color);
+    margin: 0 2rem;
+    text-indent:40px
+}
+
 
 /*Start of services*/
 
@@ -227,15 +238,20 @@ footer{
     left: 0;
     text-align: center;
     background-color: var(--secondary-bg-color);
-    padding: 2rem;
+    padding: 1rem;
     color: var(--primary-text-color);
 }
 
 .connect{
     display: flex;
-    margin-top: .5rem;
+    margin-top: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+.brand{
+    margin-top: 1rem;
+    color: var(--accent);
 }
 
 #github{
