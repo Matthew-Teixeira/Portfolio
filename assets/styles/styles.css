@@ -155,7 +155,7 @@ h1{
     border: solid var(--accent) 1px;
     border-radius: 5px;
     background-color: var(--tertiary-bg-color);
-    margin: 0 2rem;
+    margin: 2.5rem 2rem 0 2rem;
     text-indent:40px
 }
 
