@@ -9,8 +9,8 @@ Please utilize the following link to view this project’s associated page: [Por
 
 Thank you!
 
-![portfolio](./assets/images/screen-shot/port-1.png);
-![portfolio](./assets/images/screen-shot/port-2.png);
-![portfolio](./assets/images/screen-shot/port-3.png);
-![portfolio](./assets/images/screen-shot/port-4.png);
-![portfolio](./assets/images/screen-shot/port-5.png);
+![portfolio](./assets/images/screen-shot/port-1.png)
+![portfolio](./assets/images/screen-shot/port-2.png)
+![portfolio](./assets/images/screen-shot/port-3.png)
+![portfolio](./assets/images/screen-shot/port-4.png)
+![portfolio](./assets/images/screen-shot/port-5.png)
